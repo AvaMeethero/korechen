@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia - Live Call & Chat</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0b0f19;
+            font-family: 'Inter', sans-serif;
+            color: #ffffff;
+        }
+        .neon-glow-pink {
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+        }
+        .neon-glow-purple {
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+        }
+        .neon-glow-green {
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center min-h-screen p-2">
+
+    <!-- Mobile Frame Wrapper -->
+    <div class="w-full max-w-sm bg-[#121826] rounded-3xl overflow-hidden shadow-2xl border border-gray-800 relative flex flex-col justify-between p-5">
+        
+        <!-- Top Bar / Notification Banner -->
+        <div>
+            <div class="bg-gray-900/80 backdrop-blur border border-gray-800 rounded-xl p-2.5 flex items-center justify-between mb-4 text-xs">
+                <div class="flex items-center space-x-2">
+                    <span class="bg-pink-500 w-2 h-2 rounded-full animate-ping"></span>
+                    <span class="text-gray-300 font-medium">New Message!</span>
+                </div>
+                <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <!-- Profile Section -->
+            <div class="flex flex-col items-center text-center mt-2">
+                <div class="relative mb-3">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full blur opacity-75 animate-pulse"></div>
+                    <div class="relative w-28 h-28 rounded-full overflow-hidden border-2 border-pink-500 p-0.5 bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Sofia" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-black text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-gray-900 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 bg-black rounded-full"></span> Live Now
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center space-x-2 mb-1">
+                    <h1 class="text-2xl font-bold tracking-wide">Sofia</h1>
+                    <span class="text-pink-500"><i class="fa-solid fa-circle-check"></i></span>
+                    <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-md font-semibold">22</span>
+                </div>
+
+                <div class="flex items-center space-x-4 text-xs text-gray-400 mb-3">
+                    <span class="flex items-center text-amber-400 font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> 4.9 <span class="text-gray-400 font-normal ml-1">(1.8k reviews)</span>
+                    </span>
+                    <span>•</span>
+                    <span class="flex items-center">
+                        <i class="fa-solid fa-eye mr-1 text-gray-400"></i> 2.4k views
+                    </span>
+                </div>
+
+                <!-- Status Quote Box -->
+                <div class="bg-gray-900/60 border border-gray-800/80 rounded-xl p-3 text-xs text-gray-300 italic mb-6 w-full shadow-inner">
+                    💬 "Available for private video calls & chat right now! Let's talk 🔥"
+                </div>
+            </div>
+
+            <!-- Action Buttons with Link -->
+            <div class="space-y-3.5 mb-6">
+                <!-- Button 1: Join Free Call -->
+                <a href="https://auctionr.org/4/8158b2b05347f0fb82afb9eb46037ad5" target="_blank" class="flex items-center justify-between bg-gradient-to-r from-pink-600 to-rose-500 hover:from-pink-500 hover:to-rose-400 text-white p-3.5 rounded-2xl font-semibold transition-all transform active:scale-95 neon-glow-pink">
+                    <div class="flex items-center space-x-3.5">
+                        <div class="bg-white/20 p-2 rounded-xl">
+                            <i class="fa-solid fa-video text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-sm font-bold">JOIN FREE CALL</div>
+                            <div class="text-[11px] text-pink-100 font-normal">Start Live Private Cam Stream</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+
+                <!-- Button 2: Room Chat -->
+                <a href="https://auctionr.org/4/8158b2b05347f0fb82afb9eb46037ad5" target="_blank" class="flex items-center justify-between bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white p-3.5 rounded-2xl font-semibold transition-all transform active:scale-95 neon-glow-purple">
+                    <div class="flex items-center space-x-3.5">
+                        <div class="bg-white/20 p-2 rounded-xl">
+                            <i class="fa-solid fa-comments text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-sm font-bold">ROOM CHAT</div>
+                            <div class="text-[11px] text-purple-100 font-normal">Private Instant Messaging</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+
+                <!-- Button 3: Free Call (Audio) -->
+                <a href="https://auctionr.org/4/8158b2b05347f0fb82afb9eb46037ad5" target="_blank" class="flex items-center justify-between bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white p-3.5 rounded-2xl font-semibold transition-all transform active:scale-95 neon-glow-green">
+                    <div class="flex items-center space-x-3.5">
+                        <div class="bg-white/20 p-2 rounded-xl">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-sm font-bold">FREE CALL</div>
+                            <div class="text-[11px] text-emerald-100 font-normal">1-on-1 Direct Audio Connection</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Trust Badges -->
+        <div class="pt-3 border-t border-gray-800/80 flex items-center justify-around text-[10px] text-gray-400">
+            <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-shield-halved text-pink-500"></i>
+                <span>100% Secure</span>
+            </div>
+            <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-bolt text-amber-400"></i>
+                <span>No Signup Needed</span>
+            </div>
+            <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-lock text-emerald-400"></i>
+                <span>Private Line</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
